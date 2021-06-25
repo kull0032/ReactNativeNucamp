@@ -6,7 +6,14 @@ import { PARTNERS } from '../shared/partners';
 function Mission(){
     return(
         <Card title="Our Mission">
-            <Text>
+            {
+            // FIX 1: You left out 'style={{margin: 10}}' as required by the assignment.
+            // OLD CODE: <Text>
+            }
+            <Text style={{margin: 10}}>
+            {
+            // END FIX 1
+            }
                 We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. 
                 We increase access to adventure for the public while promoting safe and respectful use of resources. 
                 The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. 
