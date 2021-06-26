@@ -21,7 +21,7 @@ class Contact extends Component {
                     // you could add a bottom margin style to the Text component as the assignment asks.
                     // OLD CODE: <Text>1 Nucamp Way {'\n'} Seattle, WA 98001 {'\n'}U.S.A {'\n'}</Text>
                     }
-                    <Text style={{marginBottom: 10}}>1 Nucamp Way {'\n'} Seattle, WA 98001 {'\n'}U.S.A {'\n'}</Text>
+                    <Text style={{marginBottom: 10}}>1 Nucamp Way {'\n'} Seattle, WA 98001 {'\n'}U.S.A {'\n\n'}</Text>
                     {
                     // END FIX 1
                     }
