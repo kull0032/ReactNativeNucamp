@@ -26,8 +26,10 @@ function RenderCampsite(props) {
     const view = React.createRef();
     
     const recognizeDrag = ({dx}) => (dx < -200) ? true: false;
-
-    const recognizeComment = ({dx}) => (dx > -200) ? true: false;
+    // FIX 1: A swipe gesture to the right would be measured in the positive direction.
+    // OLD CODE: const recognizeComment = ({dx}) => (dx > -200) ? true: false;
+    const recognizeComment = ({dx}) => (dx > 200) ? true: false;
+    // END FIX 1
 
     const panResponder = PanResponder.create({
         onStartShouldSetPanResponder: () => true,
